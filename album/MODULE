@@ -1,0 +1,8 @@
+name = "Album"
+version = "0.1"
+directory = "album"
+options = '{ "main_query": [ { "type": "table", "fields": "Nome", "query": "SELECT `id`, `nome` AS `Nome` FROM am_album HAVING 1=1 ORDER BY `nome`"} ]}'
+icon = "fa fa-play"
+compatibility = "2.*"
+level = "0"
+parent = "0"

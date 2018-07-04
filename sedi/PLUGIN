@@ -1,0 +1,11 @@
+name = "Sedi"
+version = "1.0"
+directory = "sedi"
+options = '	{ "main_query": [	{	"type": "table", "fields": "Nome, Indirizzo, Città, CAP, Provincia",	"query": "SELECT an_sedi.id, an_sedi.nomesede AS Nome, an_sedi.indirizzo AS Indirizzo, an_sedi.citta AS Città, an_sedi.cap AS CAP, an_sedi.provincia AS Provincia FROM an_sedi WHERE 1=1 AND an_sedi.idanagrafica=|idanagrafica| HAVING 2=2 ORDER BY an_sedi.id DESC"}	]}'
+icon = "fa fa-headphones "
+compatibility = "2.*"
+level = "0"
+parent = "0"
+module_from = "Anagrafiche"
+module_to = "Anagrafiche"
+position = "tab"

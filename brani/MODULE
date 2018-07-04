@@ -1,0 +1,8 @@
+name = "Brani"
+version = "0.1"
+directory = "brani"
+options = '{ "main_query": [ { "type": "table", "fields": "Nome,Durata,Autore,Album", "query": "SELECT `id`, `nome` AS `Nome`, `durata` AS `Durata`, (SELECT am_autori.nome FROM am_autori INNER JOIN am_brani ON am_brani.id_autore=am_autori.id GROUP BY am_autori.id HAVING am_autori.id=am_brani.id_autore) AS `Autore`, (SELECT am_album.nome FROM am_album INNER JOIN am_brani ON am_brani.id_album=am_album.id GROUP BY am_album.id HAVING am_album.id=am_brani.id_album) AS `Album` FROM `am_brani` HAVING 1=1 ORDER BY `nome`"} ]}'
+icon = "fa fa-music"
+compatibility = "2.*"
+level = "0"
+parent = "0"

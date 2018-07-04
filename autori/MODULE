@@ -1,0 +1,8 @@
+name = "Autori"
+version = "0.1"
+directory = "autori"
+options = '{ "main_query": [ { "type": "table", "fields": "Nome", "query": "SELECT `id`, `nome` AS `Nome` FROM am_autori HAVING 1=1 ORDER BY `nome`"} ]}'
+icon = "fa fa-headphones "
+compatibility = "2.*"
+level = "0"
+parent = "0"
